@@ -85,7 +85,6 @@
     //UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"DealCell" forIndexPath:indexPath];
     CKCampaignTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"DealCell" forIndexPath:indexPath];
     
-    
     // Configure the cell...
     CKCampaign* campaign = campaigns[indexPath.row];
     //cell.textLabel.text = campaign.title;
@@ -101,7 +100,7 @@
 {
     NSInteger selectedHeight = 400;
     NSInteger deselectedHeight = 50;
-    
+
     if (campaigns.count == 0) {
         return 1;
     } else {
@@ -152,27 +151,30 @@
     }
 }
 
-/*
+
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
+    return indexPath.row == 0;
 }
-*/
 
-/*
+
+
 // Override to support editing the table view.
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+        CKCampaign* campaign = campaigns[indexPath.row];
+        [campaigns removeObjectAtIndex:indexPath.row];
+        AppDelegate *appDelegate = (AppDelegate*)([[UIApplication sharedApplication] delegate]);
+        [appDelegate.campaignKitManager removeCampaign:campaign];
+        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationTop];
     } else if (editingStyle == UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
     }   
 }
-*/
+
 
 /*
 // Override to support rearranging the table view.
