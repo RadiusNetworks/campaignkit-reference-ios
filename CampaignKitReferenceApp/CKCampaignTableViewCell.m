@@ -23,8 +23,8 @@
 {
     self.cardView.backgroundColor = [UIColor colorWithWhite:0.95 alpha:1];
     self.cardView.layer.cornerRadius = 10.0;
-    self.cardView.layer.borderWidth = 1.0;
-    self.cardView.layer.borderColor = [UIColor colorWithRed:0.227 green:0.745 blue:0.933 alpha:1.0].CGColor;
+    //self.cardView.layer.borderWidth = 1.0;
+    //self.cardView.layer.borderColor = [UIColor colorWithRed:0.227 green:0.745 blue:0.933 alpha:1.0].CGColor;
     
     self.contentView.layer.shadowColor = [UIColor grayColor].CGColor;
     self.contentView.layer.shadowRadius = 5.0;
