@@ -32,8 +32,6 @@
 		CAEBAE9E19803D7C00E65A75 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAEBAE9D19803D7C00E65A75 /* CoreLocation.framework */; };
 		CAEBAEA71980946000E65A75 /* CampaignKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAEBAEA61980946000E65A75 /* CampaignKit.framework */; };
 		CAEBAEA81980946000E65A75 /* CampaignKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAEBAEA61980946000E65A75 /* CampaignKit.framework */; };
-		CAEBAEAA198095CB00E65A75 /* ProximityKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAEBAEA9198095CB00E65A75 /* ProximityKit.framework */; };
-		CAEBAEAB198095CB00E65A75 /* ProximityKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAEBAEA9198095CB00E65A75 /* ProximityKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,7 +73,6 @@
 		CA5EA57719756BAD009450E3 /* CKReferenceAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CKReferenceAppTests.m; sourceTree = "<group>"; };
 		CAEBAE9D19803D7C00E65A75 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		CAEBAEA61980946000E65A75 /* CampaignKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CampaignKit.framework; sourceTree = "<group>"; };
-		CAEBAEA9198095CB00E65A75 /* ProximityKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ProximityKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +81,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAEBAE9E19803D7C00E65A75 /* CoreLocation.framework in Frameworks */,
-				CAEBAEAA198095CB00E65A75 /* ProximityKit.framework in Frameworks */,
 				CA5EA54F19756BAD009450E3 /* CoreGraphics.framework in Frameworks */,
 				CA5EA55119756BAD009450E3 /* UIKit.framework in Frameworks */,
 				CA5EA54D19756BAD009450E3 /* Foundation.framework in Frameworks */,
@@ -97,7 +93,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA5EA56C19756BAD009450E3 /* XCTest.framework in Frameworks */,
-				CAEBAEAB198095CB00E65A75 /* ProximityKit.framework in Frameworks */,
 				CAEBAEA81980946000E65A75 /* CampaignKit.framework in Frameworks */,
 				CA5EA56E19756BAD009450E3 /* UIKit.framework in Frameworks */,
 				CA5EA56D19756BAD009450E3 /* Foundation.framework in Frameworks */,
@@ -129,7 +124,6 @@
 		CA5EA54B19756BAD009450E3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CAEBAEA9198095CB00E65A75 /* ProximityKit.framework */,
 				CAEBAEA61980946000E65A75 /* CampaignKit.framework */,
 				CAEBAE9D19803D7C00E65A75 /* CoreLocation.framework */,
 				CA5EA54C19756BAD009450E3 /* Foundation.framework */,

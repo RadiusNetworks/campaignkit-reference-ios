@@ -5,7 +5,7 @@
 
 
 /** CKCampaign contains all the data related to a campaign. */
-@interface CKCampaign : NSObject
+@interface CKCampaign : NSObject<NSCoding>
 
 /** The campaign's id */
 @property (strong, nonatomic) NSString *id;
@@ -29,7 +29,11 @@
 
 @property (strong, nonatomic) NSArray *places;
 
+-(id)initWithCoder:(NSCoder *)coder;
+-(void)encodeWithCoder:(NSCoder *)coder;
+
 - (id)initWithDictionary:(NSDictionary*) dictionary;
+- (void)updateWithDictionary:(NSDictionary*) dictionary;
 
 /** isActive
  *
@@ -38,6 +42,9 @@
 - (BOOL)isActive;
 
 - (BOOL)isEqual:(id)object;
+- (BOOL)canDetect;
+- (void)doNotDetectFor:(NSTimeInterval)seconds;
+
 
 - (UILocalNotification*) buildLocalNotification;
 

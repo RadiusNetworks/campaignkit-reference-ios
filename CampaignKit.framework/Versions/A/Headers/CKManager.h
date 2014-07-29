@@ -61,6 +61,21 @@
  */
 - (void)sync;
 
+/*!
+ Add a campaign to the list of current campaigns
+ */
+- (void)addCampaign:(CKCampaign*)campaign;
+
+/*!
+ Remove a campaign from the list of current campaigns
+ */
+- (void)removeCampaign:(CKCampaign*)campaign;
+
+/*!
+ Remove expired campaigns from the list
+ */
+- (void)pruneExpiredCampaigns;
+
 @property (assign) id <CKManagerDelegate> delegate;
 
 /*!
@@ -68,6 +83,6 @@
  
  This can be used to populate a TableView with all currently active campaigns that the app has encountered.
  */
-@property (strong, nonatomic) NSMutableArray *campaigns;
+@property (readonly) NSArray *campaigns;
 
 @end
