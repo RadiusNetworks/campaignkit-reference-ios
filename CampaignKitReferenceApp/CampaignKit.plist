@@ -10,9 +10,9 @@
     <key>CKKitURL</key>
     <string>http://campaignkit.radiusnetworks.com/sdk/v1/kits/6</string>
     <key>PKAPIToken</key>
-    <string>d4efe313321acdd74b27e7932b4b1acf2e7f70cbf41f2351c94b6a1bb2c420fb</string>
+    <string>1ca9a9743f368095c2fcce37d19950d251fa3fede404ce2f28734fa109a92680</string>
     <key>PKKitURL</key>
-    <string>http://staging.proximitykit.com/api/kits/17</string>
+    <string>http://proximitykit.radiusnetworks.com/api/kits/3496</string>
 </dict>
 </plist>
 
