@@ -29,6 +29,7 @@
 		CA5EA56E19756BAD009450E3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA5EA55019756BAD009450E3 /* UIKit.framework */; };
 		CA5EA57619756BAD009450E3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CA5EA57419756BAD009450E3 /* InfoPlist.strings */; };
 		CA5EA57819756BAD009450E3 /* CKReferenceAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA5EA57719756BAD009450E3 /* CKReferenceAppTests.m */; };
+		CA70A4F6199A84F5008194DC /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CA70A4F5199A84F5008194DC /* libsqlite3.dylib */; };
 		CAEBAE9E19803D7C00E65A75 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAEBAE9D19803D7C00E65A75 /* CoreLocation.framework */; };
 		CAEBAEA71980946000E65A75 /* CampaignKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAEBAEA61980946000E65A75 /* CampaignKit.framework */; };
 		CAEBAEA81980946000E65A75 /* CampaignKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAEBAEA61980946000E65A75 /* CampaignKit.framework */; };
@@ -71,6 +72,7 @@
 		CA5EA57319756BAD009450E3 /* CampaignKitReferenceAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CampaignKitReferenceAppTests-Info.plist"; sourceTree = "<group>"; };
 		CA5EA57519756BAD009450E3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CA5EA57719756BAD009450E3 /* CKReferenceAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CKReferenceAppTests.m; sourceTree = "<group>"; };
+		CA70A4F5199A84F5008194DC /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		CAEBAE9D19803D7C00E65A75 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		CAEBAEA61980946000E65A75 /* CampaignKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CampaignKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA70A4F6199A84F5008194DC /* libsqlite3.dylib in Frameworks */,
 				CAEBAE9E19803D7C00E65A75 /* CoreLocation.framework in Frameworks */,
 				CA5EA54F19756BAD009450E3 /* CoreGraphics.framework in Frameworks */,
 				CA5EA55119756BAD009450E3 /* UIKit.framework in Frameworks */,
@@ -124,6 +127,7 @@
 		CA5EA54B19756BAD009450E3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CA70A4F5199A84F5008194DC /* libsqlite3.dylib */,
 				CAEBAEA61980946000E65A75 /* CampaignKit.framework */,
 				CAEBAE9D19803D7C00E65A75 /* CoreLocation.framework */,
 				CA5EA54C19756BAD009450E3 /* Foundation.framework */,
