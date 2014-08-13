@@ -51,4 +51,9 @@
  */
 - (void)campaignKit:(CKManager *)manager didFailWithError:(NSError *)error;
 
+/*!
+  Invoked after a sync has completed
+ */
+- (void) campaignKitDidSync:(CKManager *)manager;
+
 @end

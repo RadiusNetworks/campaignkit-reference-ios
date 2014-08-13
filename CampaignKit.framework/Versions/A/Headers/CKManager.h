@@ -5,6 +5,7 @@
 #import "CKManagerDelegate.h"
 #import "CKCampaign.h"
 
+
 /** CKManager
  *
  * The `CKManager` class defines the interface for configuring the delivery of campaign related events to your application.
@@ -60,6 +61,39 @@
  Force a sync with the server. This is not normally required.
  */
 - (void)sync;
+
+/*! syncWithCompletionHandler
+
+ Same as `-sync`, but accepts a block for the sync callback. This is
+ particularly useful for updating the ProximityKit data when the
+ application in in the background.
+ To take advantage of this you need to implement
+ `application:performFetchWithCompletionHandler:` in your
+ application delegate. Then within that method you can simply call
+ `syncWithCompletionHandler` and pass it the completion block:
+
+    - (void) application:(UIApplication *)application performFetchWithCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler
+    {
+       // ...
+       [pkManager syncWithCompletionHandler: completionHandler];
+    }
+
+
+ Be sure to set the fetch interval in your didFinishLaunching method:
+
+
+    - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+    {
+       // ...
+       [application setMinimumBackgroundFetchInterval:UIApplicationBackgroundFetchIntervalMinimum];
+       return YES;
+    }
+
+
+ Finally make sure you add `UIBackgroundModes` to your info plist with a string set to 'fetch'
+
+ */
+- (void)syncWithCompletionHandler:(void ( ^ ) ( UIBackgroundFetchResult ))completionHandler;
 
 /*!
  Add a campaign to the list of current campaigns
