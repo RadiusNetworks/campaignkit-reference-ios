@@ -3,8 +3,19 @@
 
 #import <Foundation/Foundation.h>
 #import "CKCampaign.h"
+#import "CKPlace.h"
 
 @class CKManager;
+
+typedef NS_ENUM (NSInteger, CKEventType) {
+    CKEventDidRangeBeacons,
+    CKEventDidEnterRegion,
+    CKEventDidExitRegion,
+    CKEventDidDetectStateInside,
+    CKEventDidDetectStateOutside,
+    CKEventDidDetectStateUnknown,
+};
+
 
 /*!
  The base delegate for Campaign Kit callbacks.
@@ -55,5 +66,10 @@
   Invoked after a sync has completed
  */
 - (void) campaignKitDidSync:(CKManager *)manager;
+
+/*!
+ Invoked when a place is detected
+ */
+- (void)campaignKit:(CKManager *)manager didDetectPlace:(CKPlace *)place onEvent:(CKEventType)event;
 
 @end

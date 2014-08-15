@@ -80,6 +80,11 @@
     NSLog(@"CampaignKit error: %@", error);
 }
 
+- (void)campaignKit:(CKManager *)manager didDetectPlace:(CKPlace *)place onEvent:(CKEventType)event
+{
+    NSLog(@"didDetectPlace: %@", place.name);
+}
+
 - (void)showCampaign:(CKCampaign*)campaign;
 {
     UIViewController* view = [self.window.rootViewController presentedViewController];
