@@ -53,12 +53,13 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
+    [self copyCampaigns];
     [self.tableView reloadData];
 }
 
 - (void)viewDidAppear:(BOOL)animated
 {
-    [self setCellzPositions];
+    //[self setCellzPositions];
 }
 
 - (void)didReceiveMemoryWarning
@@ -91,55 +92,23 @@
     //cell.detailTextLabel.text = campaign.message;
 
     NSURL* url = [[NSURL alloc] initWithString:@""];
-    [cell.webView loadHTMLString:campaign.content baseURL: url];
+    [cell.webView loadHTMLString:campaign.content.body baseURL: url];
 
     return cell;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSInteger selectedHeight = 400;
-    NSInteger deselectedHeight = 50;
-
-    if (campaigns.count == 0) {
-        return 1;
-    } else {
-        NSIndexPath* selected = self.tableView.indexPathForSelectedRow;
-        [self.tableView layoutIfNeeded];
-        NSInteger height = self.tableView.frame.size.height - 64; // how can I get the size of the navbar?
-        if (selected) {
-            if (selected.row == indexPath.row) {
-                return selectedHeight;
-            } else {
-                return deselectedHeight;
-                height -= selectedHeight;
-                return MAX((height / (campaigns.count - 1)), deselectedHeight);
-            }
-        } else {
-            if (indexPath.row == 0) {
-                return selectedHeight;
-            } else {
-                return deselectedHeight;
-            }
-            return MAX((height / campaigns.count), 60);
-        }
-            
-    }
+    return 400;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // move the selected cell to the top
     CKCampaign* campaign = campaigns[indexPath.row];
-    [campaigns removeObjectAtIndex:indexPath.row];
-    [campaigns insertObject:campaign atIndex:0];
-    NSIndexPath* top = [NSIndexPath indexPathForRow:0 inSection:0];
-    [self.tableView moveRowAtIndexPath:indexPath toIndexPath:top];
-    
-    [self.tableView beginUpdates];
-    [self.tableView endUpdates];
-    
-    [self setCellzPositions];
+    NSString* url = campaign.content.attributes[@"on_click_url"];
+    if (url) {
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];
+    }
 }
 
 -(void) setCellzPositions
@@ -155,7 +124,8 @@
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return indexPath.row == 0;
+    return true;
+    //return indexPath.row == 0;
 }
 
 

@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@class PKRegion;
+@class RPKRegion;
 
 typedef NS_ENUM (NSInteger, CKPlaceType) {
     CKPlaceTypeBeacon,
@@ -34,7 +34,7 @@ typedef NS_ENUM (NSInteger, CKPlaceType) {
  */
 @property (readonly) CKPlaceType type;
 
-- (CKPlace *)initWithRegion:(PKRegion *)region;
+- (CKPlace *)initWithRegion:(RPKRegion *)region;
 
 + (NSArray *)parsePlaceIds:(NSString *)placeIds;
 

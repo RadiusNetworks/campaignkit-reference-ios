@@ -6,6 +6,13 @@
 #import "CKCampaign.h"
 
 
+typedef NS_ENUM (NSInteger, CKAnalyticsType) {
+    CKAnalyticsFound,
+    CKAnalyticsViewed,
+    CKAnalyticsFulfilled,
+};
+
+
 /** CKManager
  *
  * The `CKManager` class defines the interface for configuring the delivery of campaign related events to your application.
@@ -109,6 +116,29 @@
  Remove expired campaigns from the list
  */
 - (void)pruneExpiredCampaigns;
+
+/*!
+ * Sets the partner identifer string for analytics.
+ *
+ * Limited to 255 characters.
+ *
+ */
+- (void)setPartnerIdentifier:(NSString *)identifier;
+
+/*!
+ Record an analytics event which references a campaign and a place
+ */
+- (void)recordAnalytics:(CKAnalyticsType)eventType forCampaign:(CKCampaign *)campaign atPlace:(CKPlace *)place;
+
+/*!
+ Record an analytics event which references a campaign and a place
+ */
+- (void)recordAnalytics:(CKAnalyticsType)eventType forCampaign:(CKCampaign *)campaign atPlaceId:(NSInteger)placeId;
+
+/*!
+ Record an analytics event which references a campaign
+ */
+- (void)recordAnalytics:(CKAnalyticsType)eventType forCampaign:(CKCampaign *)campaign;
 
 @property (assign) id <CKManagerDelegate> delegate;
 

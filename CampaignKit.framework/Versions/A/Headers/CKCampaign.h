@@ -2,7 +2,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-
+#import "CKContent.h"
 
 /** CKCampaign contains all the data related to a campaign. */
 @interface CKCampaign : NSObject<NSCoding>
@@ -10,16 +10,10 @@
 /** The campaign's id */
 @property (strong, nonatomic) NSString *id;
 
-/** The campaign's title, for alerts or notifications */
-@property (strong, nonatomic) NSString *title;
-
 /** The campaign detail content, in HTML format. This should be presented to
  * the user when a campaign is detected.
  */
-@property (strong, nonatomic) NSString *content;
-
-/** Alert message text */
-@property (strong, nonatomic) NSString *message;
+@property (strong, nonatomic) CKContent *content;
 
 /** Date & time when the campaign begins. */
 @property (strong, nonatomic) NSDate *startAt;
@@ -29,11 +23,12 @@
 
 @property (strong, nonatomic) NSArray *places;
 
+
 -(id)initWithCoder:(NSCoder *)coder;
 -(void)encodeWithCoder:(NSCoder *)coder;
 
-- (id)initWithDictionary:(NSDictionary*) dictionary;
-- (void)updateWithDictionary:(NSDictionary*) dictionary;
+- (id)initWithDictionary:(NSDictionary*) dictionary contents: (NSArray*)contents;
+- (void)updateWithDictionary:(NSDictionary*) dictionary contents: (NSArray*)contents;
 
 /** isActive
  *
