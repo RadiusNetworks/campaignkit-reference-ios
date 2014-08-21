@@ -16,6 +16,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.campaignKitManager = [CKManager managerWithDelegate:self];
+    [self.campaignKitManager setPartnerIdentifier:@"ck-reference-app"];
     [self.campaignKitManager start];
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     return YES;
@@ -99,6 +100,7 @@
         UIViewController* topView = [((UINavigationController*)view) topViewController];
         if ([topView isKindOfClass:[DealsViewController class]]) {
             [(DealsViewController*)topView showCampaign: campaign];
+            [self.campaignKitManager recordAnalytics:CKAnalyticsViewed forCampaign:campaign];
         }
     }
 }

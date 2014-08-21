@@ -109,6 +109,12 @@
     if (url) {
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];
     }
+    NSString* fulfill_on_click = campaign.content.attributes[@"fulfill_on_click"];
+    if (fulfill_on_click) {
+        AppDelegate *appDelegate = (AppDelegate*)([[UIApplication sharedApplication] delegate]);
+        [appDelegate.campaignKitManager recordAnalytics:CKAnalyticsFulfilled forCampaign:campaign];
+        [[[UIAlertView alloc] initWithTitle:@"Campaign Fulfilled" message:@"Campaign Fulfilled" delegate:nil cancelButtonTitle:@"Acknowledged" otherButtonTitles:nil] show];
+    }
 }
 
 -(void) setCellzPositions
