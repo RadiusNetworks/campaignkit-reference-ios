@@ -15,11 +15,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+#ifdef __IPHONE_8_0
     if ([UIUserNotificationSettings class]) {
         // register to be allowed to notify user (for iOS 8)
         UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:(UIRemoteNotificationTypeSound | UIRemoteNotificationTypeAlert) categories:nil];
         [[UIApplication sharedApplication] registerUserNotificationSettings:settings];
     }
+#endif
 
     self.campaignKitManager = [CKManager managerWithDelegate:self];
     [self.campaignKitManager start];
