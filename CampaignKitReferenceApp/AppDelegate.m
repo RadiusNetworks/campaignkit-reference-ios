@@ -15,10 +15,24 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+#ifdef __IPHONE_8_0
+    if ([UIUserNotificationSettings class]) {
+        // register to be allowed to notify user (for iOS 8)
+        UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:(UIRemoteNotificationTypeSound | UIRemoteNotificationTypeAlert) categories:nil];
+        [[UIApplication sharedApplication] registerUserNotificationSettings:settings];
+    }
+#endif
+
     self.campaignKitManager = [CKManager managerWithDelegate:self];
     [self.campaignKitManager start];
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     return YES;
+}
+
+- (void)application:(UIApplication *)application handleActionWithIdentifier:(NSString *)identifier forLocalNotification:(UILocalNotification *)notification completionHandler:(void(^)())completionHandle
+{
+    [self application:application didReceiveLocalNotification:notification];
+    completionHandle();
 }
 
 - (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification
@@ -65,8 +79,8 @@
     UIApplication* app = [UIApplication sharedApplication];
     if (app.applicationState != UIApplicationStateActive)
     {
-        [app presentLocalNotificationNow:[campaign buildLocalNotification]];
-        // app.applicationIconBadgeNumber = 1;
+        UILocalNotification *notification = [campaign buildLocalNotification];
+        [app presentLocalNotificationNow:notification];
     } else {
         // else if app is open, show alert view
         [CKCampaignAlertView showWithCampaign:campaign andCompletion:^{

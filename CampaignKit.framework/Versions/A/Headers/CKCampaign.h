@@ -23,6 +23,10 @@
 
 @property (strong, nonatomic) NSArray *places;
 
+/** Minimum number of seconds between subsequent presentations of the campaign 
+    if -1, it means that the campaign should only be presented once */
+@property (strong, nonatomic) NSNumber *minRecurSecs;
+
 
 -(id)initWithCoder:(NSCoder *)coder;
 -(void)encodeWithCoder:(NSCoder *)coder;
@@ -38,8 +42,7 @@
 
 - (BOOL)isEqual:(id)object;
 - (BOOL)canDetect;
-- (void)doNotDetectFor:(NSTimeInterval)seconds;
-
+- (void)detect;
 
 - (UILocalNotification*) buildLocalNotification;
 
