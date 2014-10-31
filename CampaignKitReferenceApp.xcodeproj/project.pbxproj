@@ -469,7 +469,6 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"/Users/syoder/src/lizardman-ios",
 					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -483,7 +482,7 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(TARGET_BUILD_DIR)/CampaignKitHeaders",
 				);
-				INFOPLIST_FILE = "CKReferenceAppTests/CampaignKitReferenceAppTests-Info.plist";
+				INFOPLIST_FILE = "CampaignKitReferenceAppTests/CampaignKitReferenceAppTests-Info.plist";
 				PRODUCT_NAME = CampaignKitReferenceAppTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -498,7 +497,6 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"/Users/syoder/src/lizardman-ios",
 					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -508,7 +506,7 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(TARGET_BUILD_DIR)/CampaignKitHeaders",
 				);
-				INFOPLIST_FILE = "CKReferenceAppTests/CampaignKitReferenceAppTests-Info.plist";
+				INFOPLIST_FILE = "CampaignKitReferenceAppTests/CampaignKitReferenceAppTests-Info.plist";
 				PRODUCT_NAME = CampaignKitReferenceAppTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
