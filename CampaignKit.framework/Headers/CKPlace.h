@@ -19,7 +19,7 @@ typedef NS_ENUM (NSInteger, CKPlaceType) {
  CKPlace objects can be returned when a kit's places are detected using the
  [CKManagerDelegate campaignKit:didDetectPlace:onEvent:] callback.
  */
-@interface CKPlace : NSObject
+@interface CKPlace : NSObject<NSCoding>
 
 /** The name, as set in the portal */
 @property (readonly) NSString* name;
@@ -35,6 +35,9 @@ typedef NS_ENUM (NSInteger, CKPlaceType) {
 @property (readonly) CKPlaceType type;
 
 - (CKPlace *)initWithRegion:(RPKRegion *)region;
+- (CKPlace *)initWithDict:(NSDictionary *)dict;
+- (id)initWithCoder:(NSCoder *)coder;
+- (void)encodeWithCoder:(NSCoder *)coder;
 
 + (NSArray *)parsePlaceIds:(NSString *)placeIds;
 

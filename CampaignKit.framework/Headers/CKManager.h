@@ -71,7 +71,8 @@ typedef NS_ENUM (NSInteger, CKAnalyticsType) {
 
 /*! syncWithCompletionHandler
 
- Same as `-sync`, but accepts a block for the sync callback. This is
+ Same as `-sync`, but it works synchronously (it returns when complete) and it
+ accepts a block for the sync callback. This is
  particularly useful for updating the ProximityKit data when the
  application in in the background.
  To take advantage of this you need to implement
@@ -82,7 +83,7 @@ typedef NS_ENUM (NSInteger, CKAnalyticsType) {
     - (void) application:(UIApplication *)application performFetchWithCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler
     {
        // ...
-       [pkManager syncWithCompletionHandler: completionHandler];
+       [ckManager syncWithCompletionHandler: completionHandler];
     }
 
 
@@ -124,6 +125,23 @@ typedef NS_ENUM (NSInteger, CKAnalyticsType) {
  *
  */
 - (void)setPartnerIdentifier:(NSString *)identifier;
+
+/*!
+ * Mark a campaign as "viewed" for the purposes of analytics.
+ *
+ */
+- (void)setCampaignViewed:(CKCampaign*)campaign;
+
+
+/*!
+ * Mark a campaign as "fulfilled" for the purposes of analytics.
+ *
+ * Note: if you have set a fulfillment/redemption place for a campaign, this will happen
+ * automatically when that place is encountered.  A campaign must have been "viewed" in
+ * order for it to be fulfilled.
+ *
+ */
+- (void)setCampaignFulfilled:(CKCampaign*)campaign atPlace:(CKPlace*)place;
 
 /*!
  Record an analytics event which references a campaign and a place
