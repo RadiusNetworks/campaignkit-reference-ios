@@ -31,8 +31,9 @@
 		CA5EA57819756BAD009450E3 /* CKReferenceAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA5EA57719756BAD009450E3 /* CKReferenceAppTests.m */; };
 		CA70A4F6199A84F5008194DC /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CA70A4F5199A84F5008194DC /* libsqlite3.dylib */; };
 		CAEBAE9E19803D7C00E65A75 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAEBAE9D19803D7C00E65A75 /* CoreLocation.framework */; };
-		CAEBAEA71980946000E65A75 /* CampaignKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAEBAEA61980946000E65A75 /* CampaignKit.framework */; };
 		CAEBAEA81980946000E65A75 /* CampaignKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAEBAEA61980946000E65A75 /* CampaignKit.framework */; };
+		CAF96C4E19CA7219009538F8 /* CampaignKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CAEBAEA61980946000E65A75 /* CampaignKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		CAF96C4F19CA7301009538F8 /* CampaignKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAEBAEA61980946000E65A75 /* CampaignKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,19 @@
 			remoteInfo = CKReferenceApp;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CAF96C4D19CA71F7009538F8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CAF96C4E19CA7219009538F8 /* CampaignKit.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		CA3B3B9B19761E12005FB8A6 /* DealsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DealsViewController.h; sourceTree = "<group>"; };
@@ -83,11 +97,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA70A4F6199A84F5008194DC /* libsqlite3.dylib in Frameworks */,
+				CAF96C4F19CA7301009538F8 /* CampaignKit.framework in Frameworks */,
 				CAEBAE9E19803D7C00E65A75 /* CoreLocation.framework in Frameworks */,
 				CA5EA54F19756BAD009450E3 /* CoreGraphics.framework in Frameworks */,
 				CA5EA55119756BAD009450E3 /* UIKit.framework in Frameworks */,
 				CA5EA54D19756BAD009450E3 /* Foundation.framework in Frameworks */,
-				CAEBAEA71980946000E65A75 /* CampaignKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,6 +212,7 @@
 				CA5EA54519756BAD009450E3 /* Sources */,
 				CA5EA54619756BAD009450E3 /* Frameworks */,
 				CA5EA54719756BAD009450E3 /* Resources */,
+				CAF96C4D19CA71F7009538F8 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -430,6 +445,7 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 				);
 				INFOPLIST_FILE = "CampaignKitReferenceApp/CampaignKitReferenceApp-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = CampaignKitReferenceApp;
@@ -453,6 +469,7 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 				);
 				INFOPLIST_FILE = "CampaignKitReferenceApp/CampaignKitReferenceApp-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = CampaignKitReferenceApp;
@@ -464,16 +481,15 @@
 		CA5EA57F19756BAD009450E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CKReferenceApp.app/CKReferenceApp";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CampaignKitReferenceApp.app/CampaignKitReferenceApp";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"/Users/syoder/src/lizardman-ios",
 					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CKReferenceApp/CKReferenceApp-Prefix.pch";
+				GCC_PREFIX_HEADER = "CampaignKitReferenceApp/CampaignKitReferenceApp-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -483,7 +499,7 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(TARGET_BUILD_DIR)/CampaignKitHeaders",
 				);
-				INFOPLIST_FILE = "CKReferenceAppTests/CampaignKitReferenceAppTests-Info.plist";
+				INFOPLIST_FILE = "CampaignKitReferenceAppTests/CampaignKitReferenceAppTests-Info.plist";
 				PRODUCT_NAME = CampaignKitReferenceAppTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -493,22 +509,21 @@
 		CA5EA58019756BAD009450E3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CKReferenceApp.app/CKReferenceApp";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CampaignKitReferenceApp.app/CampaignKitReferenceApp";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"/Users/syoder/src/lizardman-ios",
 					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CKReferenceApp/CKReferenceApp-Prefix.pch";
+				GCC_PREFIX_HEADER = "CampaignKitReferenceApp/CampaignKitReferenceApp-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(TARGET_BUILD_DIR)/CampaignKitHeaders",
 				);
-				INFOPLIST_FILE = "CKReferenceAppTests/CampaignKitReferenceAppTests-Info.plist";
+				INFOPLIST_FILE = "CampaignKitReferenceAppTests/CampaignKitReferenceAppTests-Info.plist";
 				PRODUCT_NAME = CampaignKitReferenceAppTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
