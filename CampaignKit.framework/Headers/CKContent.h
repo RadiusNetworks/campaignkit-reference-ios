@@ -22,7 +22,7 @@
 /** The key value attributes for the content */
 @property (strong, nonatomic) NSDictionary *attributes;
 
-@property (readonly) NSData *hash;
+@property (readonly) NSData *hashValue;
 
 -(id)initWithCoder:(NSCoder *)coder;
 -(void)encodeWithCoder:(NSCoder *)coder;
