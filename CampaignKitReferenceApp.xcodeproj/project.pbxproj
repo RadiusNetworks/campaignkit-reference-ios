@@ -67,7 +67,7 @@
 		CA3B3BBA19777A60005FB8A6 /* CKCampaignTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKCampaignTableViewCell.h; sourceTree = "<group>"; };
 		CA3B3BBB19777A60005FB8A6 /* CKCampaignTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKCampaignTableViewCell.m; sourceTree = "<group>"; };
 		CA3B3BBE19785AE2005FB8A6 /* CampaignKit.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CampaignKit.plist; sourceTree = "<group>"; };
-		CA5EA54919756BAD009450E3 /* CampaignKitReferenceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CampaignKitReferenceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA5EA54919756BAD009450E3 /* CampaignKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CampaignKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA5EA54C19756BAD009450E3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CA5EA54E19756BAD009450E3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		CA5EA55019756BAD009450E3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -132,7 +132,7 @@
 		CA5EA54A19756BAD009450E3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CA5EA54919756BAD009450E3 /* CampaignKitReferenceApp.app */,
+				CA5EA54919756BAD009450E3 /* CampaignKit.app */,
 				CA5EA56A19756BAD009450E3 /* CampaignKitReferenceAppTests.xctest */,
 			);
 			name = Products;
@@ -221,7 +221,7 @@
 			);
 			name = CampaignKitReferenceApp;
 			productName = CKReferenceApp;
-			productReference = CA5EA54919756BAD009450E3 /* CampaignKitReferenceApp.app */;
+			productReference = CA5EA54919756BAD009450E3 /* CampaignKit.app */;
 			productType = "com.apple.product-type.application";
 		};
 		CA5EA56919756BAD009450E3 /* CampaignKitReferenceAppTests */ = {
@@ -456,12 +456,15 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 				);
 				INFOPLIST_FILE = "CampaignKitReferenceApp/CampaignKitReferenceApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "";
-				PRODUCT_NAME = CampaignKitReferenceApp;
+				PRODUCT_NAME = CampaignKit;
 				PROVISIONING_PROFILE = "";
 				PUBLIC_HEADERS_FOLDER_PATH = "";
+				VALID_ARCHS = "arm64 armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -482,12 +485,14 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 				);
 				INFOPLIST_FILE = "CampaignKitReferenceApp/CampaignKitReferenceApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "";
-				PRODUCT_NAME = CampaignKitReferenceApp;
+				PRODUCT_NAME = CampaignKit;
 				PROVISIONING_PROFILE = "";
 				PUBLIC_HEADERS_FOLDER_PATH = "";
+				VALID_ARCHS = "arm64 armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

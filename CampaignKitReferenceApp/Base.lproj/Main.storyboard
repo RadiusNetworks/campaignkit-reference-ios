@@ -32,7 +32,7 @@
                                     <constraint firstAttribute="height" constant="65" id="QLO-6A-ukT"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="Deals">
+                                <state key="normal" title="Messages">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -55,7 +55,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
-        <!--Deals-->
+        <!--Messages-->
         <scene sceneID="c3r-Cq-4Od">
             <objects>
                 <tableViewController id="dST-gw-W0X" customClass="DealsViewController" sceneMemberID="viewController">
@@ -97,7 +97,7 @@
                             <outlet property="delegate" destination="dST-gw-W0X" id="Znv-k3-DMu"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Deals" id="sK8-U8-HCL"/>
+                    <navigationItem key="navigationItem" title="Messages" id="sK8-U8-HCL"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C34-3A-hda" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
