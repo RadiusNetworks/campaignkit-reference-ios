@@ -15,7 +15,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    [[UIApplication sharedApplication] registerForRemoteNotifications];
 #ifdef __IPHONE_8_0
     if ([UIUserNotificationSettings class]) {
         // register to be allowed to notify user (for iOS 8)
@@ -28,28 +27,6 @@
     [self.campaignKitManager start];
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
     return YES;
-}
-
-- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
-{
-  NSLog(@"Device Token: %@", deviceToken.description);
-}
-
--(void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error
-{
-  NSLog(@"Failed to Register for Remote Notifications: %@", error);
-}
-
-- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo
-{
-  NSLog(@"Remote Notification");
-}
-
-- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler
-{
-  NSLog(@"Remote Notification with Fetch");
-  [self.campaignKitManager handleRemoteNotification:userInfo fetchCompletionHandler:completionHandler];
-  [NSThread sleepForTimeInterval:0.2];
 }
 
 - (void)application:(UIApplication *)application handleActionWithIdentifier:(NSString *)identifier forLocalNotification:(UILocalNotification *)notification completionHandler:(void(^)())completionHandle
