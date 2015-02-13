@@ -67,7 +67,7 @@
 		CA3B3BBA19777A60005FB8A6 /* CKCampaignTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKCampaignTableViewCell.h; sourceTree = "<group>"; };
 		CA3B3BBB19777A60005FB8A6 /* CKCampaignTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKCampaignTableViewCell.m; sourceTree = "<group>"; };
 		CA3B3BBE19785AE2005FB8A6 /* CampaignKit.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CampaignKit.plist; sourceTree = "<group>"; };
-		CA5EA54919756BAD009450E3 /* CampaignKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CampaignKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA5EA54919756BAD009450E3 /* Gannett HQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gannett HQ.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA5EA54C19756BAD009450E3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CA5EA54E19756BAD009450E3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		CA5EA55019756BAD009450E3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -132,7 +132,7 @@
 		CA5EA54A19756BAD009450E3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CA5EA54919756BAD009450E3 /* CampaignKit.app */,
+				CA5EA54919756BAD009450E3 /* Gannett HQ.app */,
 				CA5EA56A19756BAD009450E3 /* CampaignKitReferenceAppTests.xctest */,
 			);
 			name = Products;
@@ -221,7 +221,7 @@
 			);
 			name = CampaignKitReferenceApp;
 			productName = CKReferenceApp;
-			productReference = CA5EA54919756BAD009450E3 /* CampaignKit.app */;
+			productReference = CA5EA54919756BAD009450E3 /* Gannett HQ.app */;
 			productType = "com.apple.product-type.application";
 		};
 		CA5EA56919756BAD009450E3 /* CampaignKitReferenceAppTests */ = {
@@ -446,7 +446,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -462,7 +462,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "Gannett HQ";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "7451ec3e-7a13-4bdc-8358-e2914e960745";
 				PUBLIC_HEADERS_FOLDER_PATH = "";
 				VALID_ARCHS = "arm64 armv7 armv7s";
 				WRAPPER_EXTENSION = app;
@@ -475,8 +475,8 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Radius Networks, Inc. (2Z2S6NCD7P)";
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CampaignKitReferenceApp/CampaignKitReferenceApp-Prefix.pch";
@@ -490,7 +490,7 @@
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "Gannett HQ";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "7451ec3e-7a13-4bdc-8358-e2914e960745";
 				PUBLIC_HEADERS_FOLDER_PATH = "";
 				VALID_ARCHS = "arm64 armv7 armv7s";
 				WRAPPER_EXTENSION = app;
