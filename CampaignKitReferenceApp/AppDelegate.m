@@ -15,10 +15,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [[UIApplication sharedApplication] registerForRemoteNotifications];
 #ifdef __IPHONE_8_0
     if ([UIUserNotificationSettings class]) {
         // register to be allowed to notify user (for iOS 8)
-        UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:(UIRemoteNotificationTypeSound | UIRemoteNotificationTypeAlert) categories:nil];
+      UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:(UIUserNotificationTypeSound | UIUserNotificationTypeAlert) categories:nil];
         [[UIApplication sharedApplication] registerUserNotificationSettings:settings];
     }
 #endif
@@ -27,6 +28,28 @@
     [self.campaignKitManager start];
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     return YES;
+}
+
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
+{
+  NSLog(@"Device Token: %@", deviceToken.description);
+}
+
+-(void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error
+{
+  NSLog(@"Failed to Register for Remote Notifications: %@", error);
+}
+
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo
+{
+  NSLog(@"Remote Notification");
+}
+
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler
+{
+  NSLog(@"Remote Notification with Fetch");
+  [self.campaignKitManager handleRemoteNotification:userInfo fetchCompletionHandler:completionHandler];
+  [NSThread sleepForTimeInterval:0.2];
 }
 
 - (void)application:(UIApplication *)application handleActionWithIdentifier:(NSString *)identifier forLocalNotification:(UILocalNotification *)notification completionHandler:(void(^)())completionHandle
@@ -96,7 +119,28 @@
 
 - (void)campaignKit:(CKManager *)manager didDetectPlace:(CKPlace *)place onEvent:(CKEventType)event
 {
-    NSLog(@"didDetectPlace: %@", place.name);
+    NSString *eventName;
+    switch (event) {
+      case CKEventDidDetectStateInside:
+        eventName = @"DidDetectStateInside";
+        break;
+      case CKEventDidDetectStateOutside:
+        eventName = @"DidDetectStateOutside";
+        break;
+      case CKEventDidEnterRegion:
+        eventName = @"DidEnterRegion";
+        break;
+      case CKEventDidDetectStateUnknown:
+        eventName = @"DidDetectStateUnknown";
+        break;
+      case CKEventDidRangeBeacons:
+        eventName = @"DidRangeBeacons";
+        break;
+      case CKEventDidExitRegion:
+        eventName = @"DidExitRegion";
+        break;
+    }
+    NSLog(@"didDetectPlace: %@ with event: %@", place.name, eventName);
 }
 
 - (void)showCampaign:(CKCampaign*)campaign;
