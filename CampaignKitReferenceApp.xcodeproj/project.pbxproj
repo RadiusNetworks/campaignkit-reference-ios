@@ -461,7 +461,7 @@
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "";
-				PRODUCT_NAME = CampaignKit;
+				PRODUCT_NAME = "Gannett HQ";
 				PROVISIONING_PROFILE = "";
 				PUBLIC_HEADERS_FOLDER_PATH = "";
 				VALID_ARCHS = "arm64 armv7 armv7s";
@@ -489,7 +489,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "";
-				PRODUCT_NAME = CampaignKit;
+				PRODUCT_NAME = "Gannett HQ";
 				PROVISIONING_PROFILE = "";
 				PUBLIC_HEADERS_FOLDER_PATH = "";
 				VALID_ARCHS = "arm64 armv7 armv7s";
