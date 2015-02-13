@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B5BD05571A8E650700BF3CA5 /* Launch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5BD05561A8E650700BF3CA5 /* Launch.storyboard */; };
 		CA3B3B9D19761E12005FB8A6 /* DealsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA3B3B9C19761E12005FB8A6 /* DealsViewController.m */; };
 		CA3B3B9E19761E12005FB8A6 /* DealsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA3B3B9C19761E12005FB8A6 /* DealsViewController.m */; };
 		CA3B3BB819775646005FB8A6 /* cafe-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = CA3B3BB619775646005FB8A6 /* cafe-bg.png */; };
@@ -58,6 +59,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B5BD05561A8E650700BF3CA5 /* Launch.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Launch.storyboard; sourceTree = "<group>"; };
 		CA3B3B9B19761E12005FB8A6 /* DealsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DealsViewController.h; sourceTree = "<group>"; };
 		CA3B3B9C19761E12005FB8A6 /* DealsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DealsViewController.m; sourceTree = "<group>"; };
 		CA3B3BB619775646005FB8A6 /* cafe-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cafe-bg.png"; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 				CA5EA55E19756BAD009450E3 /* Main.storyboard */,
 				CA5EA56419756BAD009450E3 /* Images.xcassets */,
 				CA5EA55319756BAD009450E3 /* Supporting Files */,
+				B5BD05561A8E650700BF3CA5 /* Launch.storyboard */,
 			);
 			path = CampaignKitReferenceApp;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 				CA3B3BBF19785AE2005FB8A6 /* CampaignKit.plist in Resources */,
 				CA5EA56519756BAD009450E3 /* Images.xcassets in Resources */,
 				CA5EA55719756BAD009450E3 /* InfoPlist.strings in Resources */,
+				B5BD05571A8E650700BF3CA5 /* Launch.storyboard in Resources */,
 				CA5EA56019756BAD009450E3 /* Main.storyboard in Resources */,
 				CA3B3BB919775646005FB8A6 /* cafe-bg@2x.png in Resources */,
 			);

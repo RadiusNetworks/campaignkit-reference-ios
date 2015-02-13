@@ -26,7 +26,7 @@
 
     self.campaignKitManager = [CKManager managerWithDelegate:self];
     [self.campaignKitManager start];
-    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
     return YES;
 }
 
