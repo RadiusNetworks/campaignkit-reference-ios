@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
@@ -60,7 +59,7 @@
             <objects>
                 <tableViewController id="dST-gw-W0X" customClass="DealsViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="hzF-qn-4hD">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="sectionIndexBackgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -72,18 +71,30 @@
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="400"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <view opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pDi-sD-ht4">
-                                            <rect key="frame" x="2" y="2" width="316" height="396"/>
+                                        <view opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pDi-sD-ht4">
+                                            <rect key="frame" x="2" y="2" width="371" height="396"/>
                                             <subviews>
-                                                <webView opaque="NO" userInteractionEnabled="NO" contentMode="top" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lyu-2Y-78T">
-                                                    <rect key="frame" x="0.0" y="0.0" width="316" height="396"/>
+                                                <webView opaque="NO" contentMode="top" translatesAutoresizingMaskIntoConstraints="NO" id="lyu-2Y-78T">
+                                                    <rect key="frame" x="0.0" y="0.0" width="371" height="396"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 </webView>
                                             </subviews>
                                             <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstItem="lyu-2Y-78T" firstAttribute="top" secondItem="pDi-sD-ht4" secondAttribute="top" id="9Cd-me-Euu"/>
+                                                <constraint firstItem="lyu-2Y-78T" firstAttribute="leading" secondItem="pDi-sD-ht4" secondAttribute="leading" id="TBH-B6-z6c"/>
+                                                <constraint firstAttribute="trailing" secondItem="lyu-2Y-78T" secondAttribute="trailing" id="jEA-Fw-aSN"/>
+                                                <constraint firstAttribute="bottom" secondItem="lyu-2Y-78T" secondAttribute="bottom" id="rXk-OS-Tcn"/>
+                                            </constraints>
                                         </view>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstItem="pDi-sD-ht4" firstAttribute="leading" secondItem="gdA-Jo-Wnh" secondAttribute="leading" constant="2" id="5FJ-nz-mAj"/>
+                                        <constraint firstAttribute="trailing" secondItem="pDi-sD-ht4" secondAttribute="trailing" constant="2" id="9kR-zc-ipV"/>
+                                        <constraint firstAttribute="bottom" secondItem="pDi-sD-ht4" secondAttribute="bottom" constant="2" id="STk-MB-w2c"/>
+                                        <constraint firstItem="pDi-sD-ht4" firstAttribute="top" secondItem="gdA-Jo-Wnh" secondAttribute="top" constant="2" id="nwz-ao-t77"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <connections>
@@ -98,10 +109,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Messages" id="sK8-U8-HCL"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C34-3A-hda" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="977" y="131"/>
+            <point key="canvasLocation" x="976.5" y="130.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ywa-Dz-1o6">

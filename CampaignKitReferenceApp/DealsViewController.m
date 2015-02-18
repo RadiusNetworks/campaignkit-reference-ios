@@ -34,7 +34,9 @@
     self.navigationItem.leftBarButtonItem = done;
     
     [self copyCampaigns];
-    
+    [self.tableView setContentInset:UIEdgeInsetsMake(2,0,50,0)];
+
+  
     UIImageView *bg = [[UIImageView alloc] initWithImage:[self blur:[UIImage imageNamed:@"cafe-bg.png"]]];
     [self.tableView setBackgroundView:bg];
     [self setNeedsStatusBarAppearanceUpdate];
@@ -93,6 +95,9 @@
 
     NSURL* url = [[NSURL alloc] initWithString:@""];
     [cell.webView loadHTMLString:campaign.content.body baseURL: url];
+    // prevent scrolling in the webview
+    cell.webView.scrollView.scrollEnabled = NO;
+    cell.webView.scrollView.bounces = NO;
 
     return cell;
 }
