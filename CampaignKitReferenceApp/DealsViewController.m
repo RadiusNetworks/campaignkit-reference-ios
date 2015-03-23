@@ -48,7 +48,7 @@
 -(void) copyCampaigns
 {
     AppDelegate *appDelegate = (AppDelegate*)([[UIApplication sharedApplication] delegate]);
-    campaigns = [appDelegate.campaignKitManager.campaigns mutableCopy];
+    campaigns = [appDelegate.campaignKitManager.foundCampaigns mutableCopy];
 }
 
 - (void)viewWillAppear:(BOOL)animated
