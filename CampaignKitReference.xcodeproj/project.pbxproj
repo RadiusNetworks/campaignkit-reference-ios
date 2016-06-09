@@ -153,7 +153,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CA5EA57B19756BAD009450E3 /* Build configuration list for PBXNativeTarget "CampaignKitReference" */;
 			buildPhases = (
-				B51E5AA81D075617000E297B /* ShellScript */,
+				B51E5AA81D075617000E297B /* Download CampaignKit.framework */,
 				CA5EA54519756BAD009450E3 /* Sources */,
 				CA5EA54619756BAD009450E3 /* Frameworks */,
 				CA5EA54719756BAD009450E3 /* Resources */,
@@ -222,18 +222,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		B51E5AA81D075617000E297B /* ShellScript */ = {
+		B51E5AA81D075617000E297B /* Download CampaignKit.framework */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "Download CampaignKit.framework";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if [ ! -d \"$TARGET_BUILD_DIR/CampaignKit.framework\" ]; then\n  cp -r \"/Users/csexton/Library/Developer/Xcode/DerivedData/Monsters-ctexepmaimzmyaerkyrxnksogfdh/Build/Products/Debug-iphoneos/CampaignKit.framework\" \"$TARGET_BUILD_DIR/CampaignKit.framework\"\nfi\n\n\n\n";
+			shellPath = /bin/bash;
+			shellScript = "[ -d \"$TARGET_BUILD_DIR/CampaignKit.framework\" ] && exit\n\necho \"CampaignKit.framework not found, downloading from GitHub\"\ntmpfile=\"$TEMP_FILES_DIR/CampaignKit.zip\"\ncurl -L -o $tmpfile $(curl -s \"https://api.github.com/repos/RadiusNetworks/campaignkit-ios/releases/latest\" | grep browser_download_url | head -n 1 | cut -d '\"' -f 4)\nunzip -d $TARGET_BUILD_DIR $tmpfile\nrm $tmpfile\n\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
