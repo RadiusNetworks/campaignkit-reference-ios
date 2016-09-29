@@ -26,12 +26,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // Don't background fetch more than every 15 minutes
     application.setMinimumBackgroundFetchInterval(15 * 60)
     
+    // TODO: Make sure you substitute your own values in the configuration below
+    
     // Create and start the Campaign Kit Manager
     let configDict: [String:Any] = [
-      "CKAPIToken": "0af5010ba6f846855b90cdabdf5cee5376c380c296855be312efb708352ac94f",
-      "CKKitURL": "https://campaignkit.radiusnetworks.com/sdk/v1/kits/1104",
-      "PKAPIToken": "fa09e46f35158a6a09b489a4fadde84590c33c0eb019976e6e100c931db49adf",
-      "PKKitURL": "https://proximitykit.radiusnetworks.com/api/kits/7777",
+      "CKAPIToken": "0000000000000000000000000000000000000000000000000000000000000000",
+      "CKKitURL": "https://campaignkit.radiusnetworks.com/sdk/v1/kits/0000",
+      "PKAPIToken": "0000000000000000000000000000000000000000000000000000000000000000",
+      "PKKitURL": "https://proximitykit.radiusnetworks.com/api/kits/0000",
     ]
     
     // Create and start the Campaign Kit Manager
