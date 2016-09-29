@@ -7,178 +7,129 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B54AD9EB1D0753ED009CA63E /* CampaignKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54AD9EA1D0753ED009CA63E /* CampaignKit.framework */; };
-		CA3B3B9D19761E12005FB8A6 /* DealsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA3B3B9C19761E12005FB8A6 /* DealsViewController.m */; };
-		CA3B3BB819775646005FB8A6 /* cafe-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = CA3B3BB619775646005FB8A6 /* cafe-bg.png */; };
-		CA3B3BB919775646005FB8A6 /* cafe-bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA3B3BB719775646005FB8A6 /* cafe-bg@2x.png */; };
-		CA3B3BBC19777A60005FB8A6 /* CKCampaignTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CA3B3BBB19777A60005FB8A6 /* CKCampaignTableViewCell.m */; };
-		CA3B3BBF19785AE2005FB8A6 /* CampaignKit.plist in Resources */ = {isa = PBXBuildFile; fileRef = CA3B3BBE19785AE2005FB8A6 /* CampaignKit.plist */; };
-		CA5EA54D19756BAD009450E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA5EA54C19756BAD009450E3 /* Foundation.framework */; };
-		CA5EA54F19756BAD009450E3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA5EA54E19756BAD009450E3 /* CoreGraphics.framework */; };
-		CA5EA55119756BAD009450E3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA5EA55019756BAD009450E3 /* UIKit.framework */; };
-		CA5EA55719756BAD009450E3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CA5EA55519756BAD009450E3 /* InfoPlist.strings */; };
-		CA5EA55919756BAD009450E3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CA5EA55819756BAD009450E3 /* main.m */; };
-		CA5EA55D19756BAD009450E3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CA5EA55C19756BAD009450E3 /* AppDelegate.m */; };
-		CA5EA56019756BAD009450E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA5EA55E19756BAD009450E3 /* Main.storyboard */; };
-		CA5EA56319756BAD009450E3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA5EA56219756BAD009450E3 /* ViewController.m */; };
-		CA5EA56519756BAD009450E3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA5EA56419756BAD009450E3 /* Images.xcassets */; };
-		CA70A4F6199A84F5008194DC /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CA70A4F5199A84F5008194DC /* libsqlite3.dylib */; };
-		CAEBAE9E19803D7C00E65A75 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAEBAE9D19803D7C00E65A75 /* CoreLocation.framework */; };
+		2B0D196D1D9C297300BD16AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0D196C1D9C297300BD16AB /* AppDelegate.swift */; };
+		2B0D196F1D9C297300BD16AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0D196E1D9C297300BD16AB /* ViewController.swift */; };
+		2B0D19721D9C297300BD16AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B0D19701D9C297300BD16AB /* Main.storyboard */; };
+		2B0D19741D9C297300BD16AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B0D19731D9C297300BD16AB /* Assets.xcassets */; };
+		2B0D19871D9C356B00BD16AB /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B0D19861D9C356B00BD16AB /* CoreBluetooth.framework */; };
+		2B0D19891D9C357800BD16AB /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B0D19881D9C357800BD16AB /* libsqlite3.0.tbd */; };
+		2B0D198B1D9C442C00BD16AB /* DealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0D198A1D9C442C00BD16AB /* DealViewController.swift */; };
+		2B0D198E1D9C5ACC00BD16AB /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B0D198D1D9C5ACC00BD16AB /* bg.png */; };
+		2BA178271D9DBB33001E8CDE /* CampaignKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BA178261D9DBB33001E8CDE /* CampaignKit.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		CAF96C4D19CA71F7009538F8 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 12;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		B54AD9EA1D0753ED009CA63E /* CampaignKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CampaignKit.framework; path = "../../../Library/Developer/Xcode/DerivedData/Monsters-ctexepmaimzmyaerkyrxnksogfdh/Build/Products/Debug-iphoneos/CampaignKit.framework"; sourceTree = "<group>"; };
-		CA3B3B9B19761E12005FB8A6 /* DealsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DealsViewController.h; sourceTree = "<group>"; };
-		CA3B3B9C19761E12005FB8A6 /* DealsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DealsViewController.m; sourceTree = "<group>"; };
-		CA3B3BB619775646005FB8A6 /* cafe-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cafe-bg.png"; sourceTree = "<group>"; };
-		CA3B3BB719775646005FB8A6 /* cafe-bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cafe-bg@2x.png"; sourceTree = "<group>"; };
-		CA3B3BBA19777A60005FB8A6 /* CKCampaignTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKCampaignTableViewCell.h; sourceTree = "<group>"; };
-		CA3B3BBB19777A60005FB8A6 /* CKCampaignTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKCampaignTableViewCell.m; sourceTree = "<group>"; };
-		CA3B3BBE19785AE2005FB8A6 /* CampaignKit.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CampaignKit.plist; sourceTree = "<group>"; };
-		CA5EA54919756BAD009450E3 /* CampaignKitReference.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CampaignKitReference.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CA5EA54C19756BAD009450E3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		CA5EA54E19756BAD009450E3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		CA5EA55019756BAD009450E3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		CA5EA55419756BAD009450E3 /* CampaignKitReference-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CampaignKitReference-Info.plist"; sourceTree = "<group>"; };
-		CA5EA55619756BAD009450E3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		CA5EA55819756BAD009450E3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		CA5EA55A19756BAD009450E3 /* CampaignKitReference-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CampaignKitReference-Prefix.pch"; sourceTree = "<group>"; };
-		CA5EA55B19756BAD009450E3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		CA5EA55C19756BAD009450E3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CA5EA55F19756BAD009450E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CA5EA56119756BAD009450E3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		CA5EA56219756BAD009450E3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		CA5EA56419756BAD009450E3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		CA5EA56B19756BAD009450E3 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		CA70A4F5199A84F5008194DC /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
-		CAEBAE9D19803D7C00E65A75 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		2B0D19691D9C297300BD16AB /* CampaignKitReference.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CampaignKitReference.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B0D196C1D9C297300BD16AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2B0D196E1D9C297300BD16AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2B0D19711D9C297300BD16AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2B0D19731D9C297300BD16AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2B0D19781D9C297300BD16AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B0D19861D9C356B00BD16AB /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		2B0D19881D9C357800BD16AB /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		2B0D198A1D9C442C00BD16AB /* DealViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealViewController.swift; sourceTree = "<group>"; };
+		2B0D198D1D9C5ACC00BD16AB /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
+		2BA178261D9DBB33001E8CDE /* CampaignKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CampaignKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		CA5EA54619756BAD009450E3 /* Frameworks */ = {
+		2B0D19661D9C297300BD16AB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B54AD9EB1D0753ED009CA63E /* CampaignKit.framework in Frameworks */,
-				CA70A4F6199A84F5008194DC /* libsqlite3.dylib in Frameworks */,
-				CAEBAE9E19803D7C00E65A75 /* CoreLocation.framework in Frameworks */,
-				CA5EA54F19756BAD009450E3 /* CoreGraphics.framework in Frameworks */,
-				CA5EA55119756BAD009450E3 /* UIKit.framework in Frameworks */,
-				CA5EA54D19756BAD009450E3 /* Foundation.framework in Frameworks */,
+				2BA178271D9DBB33001E8CDE /* CampaignKit.framework in Frameworks */,
+				2B0D19891D9C357800BD16AB /* libsqlite3.0.tbd in Frameworks */,
+				2B0D19871D9C356B00BD16AB /* CoreBluetooth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CA5EA54019756BAD009450E3 = {
+		2B0D19601D9C297300BD16AB = {
 			isa = PBXGroup;
 			children = (
-				CA5EA55219756BAD009450E3 /* CampaignKitReference */,
-				CA5EA54B19756BAD009450E3 /* Frameworks */,
-				CA5EA54A19756BAD009450E3 /* Products */,
+				2BA178261D9DBB33001E8CDE /* CampaignKit.framework */,
+				2B0D196B1D9C297300BD16AB /* CampaignKitReference */,
+				2B0D196A1D9C297300BD16AB /* Products */,
+				2B0D19851D9C356A00BD16AB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		CA5EA54A19756BAD009450E3 /* Products */ = {
+		2B0D196A1D9C297300BD16AB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CA5EA54919756BAD009450E3 /* CampaignKitReference.app */,
+				2B0D19691D9C297300BD16AB /* CampaignKitReference.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CA5EA54B19756BAD009450E3 /* Frameworks */ = {
+		2B0D196B1D9C297300BD16AB /* CampaignKitReference */ = {
 			isa = PBXGroup;
 			children = (
-				B54AD9EA1D0753ED009CA63E /* CampaignKit.framework */,
-				CA70A4F5199A84F5008194DC /* libsqlite3.dylib */,
-				CAEBAE9D19803D7C00E65A75 /* CoreLocation.framework */,
-				CA5EA54C19756BAD009450E3 /* Foundation.framework */,
-				CA5EA54E19756BAD009450E3 /* CoreGraphics.framework */,
-				CA5EA55019756BAD009450E3 /* UIKit.framework */,
-				CA5EA56B19756BAD009450E3 /* XCTest.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		CA5EA55219756BAD009450E3 /* CampaignKitReference */ = {
-			isa = PBXGroup;
-			children = (
-				CA5EA55B19756BAD009450E3 /* AppDelegate.h */,
-				CA5EA55C19756BAD009450E3 /* AppDelegate.m */,
-				CA5EA56119756BAD009450E3 /* ViewController.h */,
-				CA5EA56219756BAD009450E3 /* ViewController.m */,
-				CA3B3B9B19761E12005FB8A6 /* DealsViewController.h */,
-				CA3B3B9C19761E12005FB8A6 /* DealsViewController.m */,
-				CA3B3BBA19777A60005FB8A6 /* CKCampaignTableViewCell.h */,
-				CA3B3BBB19777A60005FB8A6 /* CKCampaignTableViewCell.m */,
-				CA5EA55E19756BAD009450E3 /* Main.storyboard */,
-				CA5EA56419756BAD009450E3 /* Images.xcassets */,
-				CA5EA55319756BAD009450E3 /* Supporting Files */,
+				2B0D198C1D9C5ACC00BD16AB /* Resources */,
+				2B0D196C1D9C297300BD16AB /* AppDelegate.swift */,
+				2B0D196E1D9C297300BD16AB /* ViewController.swift */,
+				2B0D198A1D9C442C00BD16AB /* DealViewController.swift */,
+				2B0D19701D9C297300BD16AB /* Main.storyboard */,
+				2B0D19731D9C297300BD16AB /* Assets.xcassets */,
+				2B0D19781D9C297300BD16AB /* Info.plist */,
 			);
 			path = CampaignKitReference;
 			sourceTree = "<group>";
 		};
-		CA5EA55319756BAD009450E3 /* Supporting Files */ = {
+		2B0D19851D9C356A00BD16AB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CA3B3BBE19785AE2005FB8A6 /* CampaignKit.plist */,
-				CA3B3BB619775646005FB8A6 /* cafe-bg.png */,
-				CA3B3BB719775646005FB8A6 /* cafe-bg@2x.png */,
-				CA5EA55419756BAD009450E3 /* CampaignKitReference-Info.plist */,
-				CA5EA55519756BAD009450E3 /* InfoPlist.strings */,
-				CA5EA55819756BAD009450E3 /* main.m */,
-				CA5EA55A19756BAD009450E3 /* CampaignKitReference-Prefix.pch */,
+				2B0D19881D9C357800BD16AB /* libsqlite3.0.tbd */,
+				2B0D19861D9C356B00BD16AB /* CoreBluetooth.framework */,
 			);
-			name = "Supporting Files";
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2B0D198C1D9C5ACC00BD16AB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2B0D198D1D9C5ACC00BD16AB /* bg.png */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CA5EA54819756BAD009450E3 /* CampaignKitReference */ = {
+		2B0D19681D9C297300BD16AB /* CampaignKitReference */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CA5EA57B19756BAD009450E3 /* Build configuration list for PBXNativeTarget "CampaignKitReference" */;
+			buildConfigurationList = 2B0D197B1D9C297300BD16AB /* Build configuration list for PBXNativeTarget "CampaignKitReference" */;
 			buildPhases = (
-				B51E5AA81D075617000E297B /* Download CampaignKit.framework */,
-				CA5EA54519756BAD009450E3 /* Sources */,
-				CA5EA54619756BAD009450E3 /* Frameworks */,
-				CA5EA54719756BAD009450E3 /* Resources */,
-				CAF96C4D19CA71F7009538F8 /* CopyFiles */,
+				2B0D197E1D9C29B600BD16AB /* Download CampaignKit.framework */,
+				2B0D19651D9C297300BD16AB /* Sources */,
+				2B0D19661D9C297300BD16AB /* Frameworks */,
+				2B0D19671D9C297300BD16AB /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = CampaignKitReference;
-			productName = CKReferenceApp;
-			productReference = CA5EA54919756BAD009450E3 /* CampaignKitReference.app */;
+			productName = CampaignKitReference;
+			productReference = 2B0D19691D9C297300BD16AB /* CampaignKitReference.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		CA5EA54119756BAD009450E3 /* Project object */ = {
+		2B0D19611D9C297300BD16AB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Radius Networks";
 				TargetAttributes = {
-					CA5EA54819756BAD009450E3 = {
+					2B0D19681D9C297300BD16AB = {
+						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 2Z2S6NCD7P;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -187,7 +138,7 @@
 					};
 				};
 			};
-			buildConfigurationList = CA5EA54419756BAD009450E3 /* Build configuration list for PBXProject "CampaignKitReference" */;
+			buildConfigurationList = 2B0D19641D9C297300BD16AB /* Build configuration list for PBXProject "CampaignKitReference" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -195,34 +146,31 @@
 				en,
 				Base,
 			);
-			mainGroup = CA5EA54019756BAD009450E3;
-			productRefGroup = CA5EA54A19756BAD009450E3 /* Products */;
+			mainGroup = 2B0D19601D9C297300BD16AB;
+			productRefGroup = 2B0D196A1D9C297300BD16AB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CA5EA54819756BAD009450E3 /* CampaignKitReference */,
+				2B0D19681D9C297300BD16AB /* CampaignKitReference */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		CA5EA54719756BAD009450E3 /* Resources */ = {
+		2B0D19671D9C297300BD16AB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA3B3BB819775646005FB8A6 /* cafe-bg.png in Resources */,
-				CA3B3BBF19785AE2005FB8A6 /* CampaignKit.plist in Resources */,
-				CA5EA56519756BAD009450E3 /* Images.xcassets in Resources */,
-				CA5EA55719756BAD009450E3 /* InfoPlist.strings in Resources */,
-				CA5EA56019756BAD009450E3 /* Main.storyboard in Resources */,
-				CA3B3BB919775646005FB8A6 /* cafe-bg@2x.png in Resources */,
+				2B0D19741D9C297300BD16AB /* Assets.xcassets in Resources */,
+				2B0D198E1D9C5ACC00BD16AB /* bg.png in Resources */,
+				2B0D19721D9C297300BD16AB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		B51E5AA81D075617000E297B /* Download CampaignKit.framework */ = {
+		2B0D197E1D9C29B600BD16AB /* Download CampaignKit.framework */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -233,39 +181,29 @@
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/bash;
-			shellScript = "[ -d \"$TARGET_BUILD_DIR/CampaignKit.framework\" ] && exit\n\necho \"CampaignKit.framework not found, downloading from GitHub\"\ntmpfile=\"$TEMP_FILES_DIR/CampaignKit.zip\"\ncurl -L -o $tmpfile $(curl -s \"https://api.github.com/repos/RadiusNetworks/campaignkit-ios/releases/latest\" | grep browser_download_url | head -n 1 | cut -d '\"' -f 4)\nunzip -d $TARGET_BUILD_DIR $tmpfile\nrm $tmpfile\n\n";
+			shellPath = /bin/sh;
+			shellScript = "[ -d \"$TARGET_BUILD_DIR/CampaignKit.framework\" ] && exit\n \n echo \"CampaignKit.framework not found, downloading from GitHub\"\n tmpfile=\"$TEMP_FILES_DIR/CampaignKit.zip\"\n curl -L -o $tmpfile $(curl -s \"https://api.github.com/repos/RadiusNetworks/campaignkit-ios/releases/latest\" | grep browser_download_url | head -n 1 | cut -d '\"' -f 4)\n unzip -d $TARGET_BUILD_DIR $tmpfile\n rm $tmpfile\n \n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		CA5EA54519756BAD009450E3 /* Sources */ = {
+		2B0D19651D9C297300BD16AB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA3B3B9D19761E12005FB8A6 /* DealsViewController.m in Sources */,
-				CA3B3BBC19777A60005FB8A6 /* CKCampaignTableViewCell.m in Sources */,
-				CA5EA56319756BAD009450E3 /* ViewController.m in Sources */,
-				CA5EA55D19756BAD009450E3 /* AppDelegate.m in Sources */,
-				CA5EA55919756BAD009450E3 /* main.m in Sources */,
+				2B0D198B1D9C442C00BD16AB /* DealViewController.swift in Sources */,
+				2B0D196F1D9C297300BD16AB /* ViewController.swift in Sources */,
+				2B0D196D1D9C297300BD16AB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CA5EA55519756BAD009450E3 /* InfoPlist.strings */ = {
+		2B0D19701D9C297300BD16AB /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CA5EA55619756BAD009450E3 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		CA5EA55E19756BAD009450E3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CA5EA55F19756BAD009450E3 /* Base */,
+				2B0D19711D9C297300BD16AB /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -273,10 +211,11 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		CA5EA57919756BAD009450E3 /* Debug */ = {
+		2B0D19791D9C297300BD16AB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -284,37 +223,48 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		CA5EA57A19756BAD009450E3 /* Release */ = {
+		2B0D197A1D9C297300BD16AB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -322,103 +272,94 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		CA5EA57C19756BAD009450E3 /* Debug */ = {
+		2B0D197C1D9C297300BD16AB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CampaignKitReference/CampaignKitReference-Prefix.pch";
-				HEADER_SEARCH_PATHS = (
+				DEVELOPMENT_TEAM = 2Z2S6NCD7P;
+				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/CampaignKitReference",
 				);
-				INFOPLIST_FILE = "CampaignKitReference/CampaignKitReference-Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				OTHER_LDFLAGS = "";
-				PRODUCT_NAME = CampaignKitReference;
-				PROVISIONING_PROFILE = "";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				WRAPPER_EXTENSION = app;
+				INFOPLIST_FILE = CampaignKitReference/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.radiusnetworks.CampaignKitReference;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
-		CA5EA57D19756BAD009450E3 /* Release */ = {
+		2B0D197D1D9C297300BD16AB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CampaignKitReference/CampaignKitReference-Prefix.pch";
-				HEADER_SEARCH_PATHS = (
+				DEVELOPMENT_TEAM = 2Z2S6NCD7P;
+				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/CampaignKitReference",
 				);
-				INFOPLIST_FILE = "CampaignKitReference/CampaignKitReference-Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				OTHER_LDFLAGS = "";
-				PRODUCT_NAME = CampaignKitReference;
-				PROVISIONING_PROFILE = "";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				WRAPPER_EXTENSION = app;
+				INFOPLIST_FILE = CampaignKitReference/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.radiusnetworks.CampaignKitReference;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CA5EA54419756BAD009450E3 /* Build configuration list for PBXProject "CampaignKitReference" */ = {
+		2B0D19641D9C297300BD16AB /* Build configuration list for PBXProject "CampaignKitReference" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CA5EA57919756BAD009450E3 /* Debug */,
-				CA5EA57A19756BAD009450E3 /* Release */,
+				2B0D19791D9C297300BD16AB /* Debug */,
+				2B0D197A1D9C297300BD16AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CA5EA57B19756BAD009450E3 /* Build configuration list for PBXNativeTarget "CampaignKitReference" */ = {
+		2B0D197B1D9C297300BD16AB /* Build configuration list for PBXNativeTarget "CampaignKitReference" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CA5EA57C19756BAD009450E3 /* Debug */,
-				CA5EA57D19756BAD009450E3 /* Release */,
+				2B0D197C1D9C297300BD16AB /* Debug */,
+				2B0D197D1D9C297300BD16AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = CA5EA54119756BAD009450E3 /* Project object */;
+	rootObject = 2B0D19611D9C297300BD16AB /* Project object */;
 }

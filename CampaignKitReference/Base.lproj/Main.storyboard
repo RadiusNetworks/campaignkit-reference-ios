@@ -1,133 +1,98 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
+        <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CampaignKitReference" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="cafe-bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="gM0-D0-F6h">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="gM0-D0-F6h" secondAttribute="height" multiplier="40:71" id="ZYi-E7-5vc"/>
-                                </constraints>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xqs-5M-JDG">
-                                <rect key="frame" x="0.0" y="504" width="320" height="65"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="65" id="QLO-6A-ukT"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="Deals">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="ZvF-TU-W5p" kind="modal" identifier="deals" modalTransitionStyle="flipHorizontal" id="IdZ-MB-gTG"/>
-                                </connections>
-                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="NuH-lG-aVc"/>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="bottom" secondItem="Xqs-5M-JDG" secondAttribute="bottom" constant="-1" id="1by-Nm-Huv"/>
-                            <constraint firstAttribute="centerY" secondItem="gM0-D0-F6h" secondAttribute="centerY" id="MxR-QJ-4hu"/>
-                            <constraint firstAttribute="centerX" secondItem="gM0-D0-F6h" secondAttribute="centerX" id="c9D-FQ-dXf"/>
-                            <constraint firstAttribute="width" secondItem="gM0-D0-F6h" secondAttribute="width" id="emr-vC-qhI"/>
-                            <constraint firstAttribute="width" secondItem="Xqs-5M-JDG" secondAttribute="width" id="lrp-Zm-Dfj"/>
-                            <constraint firstAttribute="centerX" secondItem="Xqs-5M-JDG" secondAttribute="centerX" id="qz5-0p-PzG"/>
+                            <constraint firstItem="NuH-lG-aVc" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="HML-A1-sgL"/>
+                            <constraint firstItem="NuH-lG-aVc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="iSb-UJ-oTm"/>
+                            <constraint firstAttribute="trailing" secondItem="NuH-lG-aVc" secondAttribute="trailing" id="so2-sU-LoW"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="NuH-lG-aVc" secondAttribute="bottom" id="w6a-fI-svR"/>
                         </constraints>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="256.80000000000001" y="141.67916041979012"/>
         </scene>
-        <!--Deals View Controller - Deals-->
-        <scene sceneID="c3r-Cq-4Od">
+        <!--View Deal-->
+        <scene sceneID="oqd-BR-j0B">
             <objects>
-                <tableViewController id="dST-gw-W0X" customClass="DealsViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="hzF-qn-4hD">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                <viewController id="2bb-T3-PJ9" customClass="DealViewController" customModule="CampaignKitReference" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ybn-Ra-lkF"/>
+                        <viewControllerLayoutGuide type="bottom" id="r4E-hG-nya"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ahs-fz-klJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="sectionIndexBackgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell opaque="NO" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" shouldIndentWhileEditing="NO" reuseIdentifier="DealCell" rowHeight="400" id="lP9-cn-EZ2" customClass="CKCampaignTableViewCell">
-                                <rect key="frame" x="0.0" y="86" width="320" height="400"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" autoresizesSubviews="NO" opaque="NO" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lP9-cn-EZ2" id="gdA-Jo-Wnh">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="400"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <view opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pDi-sD-ht4">
-                                            <rect key="frame" x="2" y="2" width="316" height="396"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <subviews>
-                                                <webView opaque="NO" userInteractionEnabled="NO" contentMode="top" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lyu-2Y-78T">
-                                                    <rect key="frame" x="0.0" y="0.0" width="316" height="396"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                </webView>
-                                            </subviews>
-                                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                        </view>
-                                    </subviews>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </tableViewCellContentView>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <connections>
-                                    <outlet property="cardView" destination="pDi-sD-ht4" id="UWU-91-4jL"/>
-                                    <outlet property="webView" destination="lyu-2Y-78T" id="bmU-jR-GU6"/>
-                                </connections>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="dST-gw-W0X" id="yrK-nP-et1"/>
-                            <outlet property="delegate" destination="dST-gw-W0X" id="Znv-k3-DMu"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Deals" id="sK8-U8-HCL"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="C34-3A-hda" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZHI-dV-dv6">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <dataDetectorType key="dataDetectorTypes"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ZHI-dV-dv6" secondAttribute="trailing" id="BHX-oH-CLk"/>
+                            <constraint firstItem="r4E-hG-nya" firstAttribute="top" secondItem="ZHI-dV-dv6" secondAttribute="bottom" id="GgR-dY-FKc"/>
+                            <constraint firstItem="ZHI-dV-dv6" firstAttribute="top" secondItem="ybn-Ra-lkF" secondAttribute="bottom" constant="-64" id="TEU-Gu-Piu"/>
+                            <constraint firstItem="ZHI-dV-dv6" firstAttribute="leading" secondItem="ahs-fz-klJ" secondAttribute="leading" id="gmR-Ex-bKJ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="View Deal" id="R4J-HW-Qxv">
+                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="2Ml-O6-U7j">
+                            <connections>
+                                <action selector="didPressDone:" destination="2bb-T3-PJ9" id="GfW-RR-rUo"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="webView" destination="ZHI-dV-dv6" id="J9s-Gv-36f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hy8-qQ-dA5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="977" y="131"/>
+            <point key="canvasLocation" x="1936.8" y="141.67916041979012"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="ywa-Dz-1o6">
+        <scene sceneID="Mt1-Ay-UtW">
             <objects>
-                <navigationController storyboardIdentifier="deals_nav" definesPresentationContext="YES" id="ZvF-TU-W5p" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="8LB-kH-2j5">
+                <navigationController storyboardIdentifier="DealNavController" automaticallyAdjustsScrollViewInsets="NO" id="JL3-pE-b6l" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sTy-Df-tw0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="dST-gw-W0X" kind="relationship" relationship="rootViewController" id="Rsx-UW-ApZ"/>
+                        <segue destination="2bb-T3-PJ9" kind="relationship" relationship="rootViewController" id="K6m-er-JAG"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Idb-KS-M2b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6br-Vx-4mV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="567" y="131"/>
+            <point key="canvasLocation" x="1128.8" y="141.67916041979012"/>
         </scene>
     </scenes>
     <resources>
-        <image name="cafe-bg.png" width="640" height="1136"/>
+        <image name="bg.png" width="1242" height="2208"/>
     </resources>
-    <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedStatusBarMetrics key="statusBar"/>
-        <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
-    </simulatedMetricsContainer>
 </document>
