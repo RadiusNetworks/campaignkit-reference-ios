@@ -23,8 +23,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     center.requestAuthorization(options: [.alert, .sound]) { (granted, error) in
     }
 
-    // Don't background fetch more than every 15 minutes
-    application.setMinimumBackgroundFetchInterval(15 * 60)
+    // Don't background fetch more than every 60 minutes
+    application.setMinimumBackgroundFetchInterval(60 * 60)
     
     // TODO: Make sure you substitute your own values in the configuration below
     
