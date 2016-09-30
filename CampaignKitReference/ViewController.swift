@@ -37,10 +37,8 @@ class ViewController: UIViewController {
   // MARK: - Notification Handler
   
   func campaignFound(notification: NSNotification) {
-    if let userInfo = notification.userInfo {
-      if let campaign = userInfo["campaign"] as? CKCampaign {
-        self.showAlertForCampaign(campaign)
-      }
+    if let userInfo = notification.userInfo, let campaign = userInfo["campaign"] as? CKCampaign {
+      self.showAlertForCampaign(campaign)
     }
   }
 
@@ -49,9 +47,10 @@ class ViewController: UIViewController {
   func showDeal(_ content: String?) {
     let storyboard = UIStoryboard(name: "Main", bundle: nil)
     let navVC = storyboard.instantiateViewController(withIdentifier: "DealNavController") as! UINavigationController
-    let dealVC = navVC.childViewControllers.first as! DealViewController
-    dealVC.htmlContent = content
-    self.present(navVC, animated: true, completion: nil)
+    if let dealVC = navVC.childViewControllers.first as? DealViewController {
+      dealVC.htmlContent = content
+      self.present(navVC, animated: true, completion: nil)
+    }
   }
   
   func showAlertForCampaign(_ campaign: CKCampaign) {
